@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario de Autos</title>
+    <link rel="stylesheet" href="/css/cssexterno.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Bienvenido al Concesionario de Autos</h1>
+    </header>
+    <section>
+        <p id="descripcion">Encuentra tu auto ideal.</p>
+        <img id="imagenAuto" src="" alt="Imagen del auto" style="display:none; width:300px; margin-top:20px;">
+        <p id="precioAuto"></p>
+
+        <button onclick="document.getElementById('descripcion').innerText='BMW M4 - Modelo Deportivo'">
+            Mostrar nombre del auto
+        </button>
+        <button onclick="document.getElementById('imagenAuto').src='https://www.bmw.com.pe/content/dam/bmw/marketLATAM/master/LandingPage/M8-Competition.jpg'; document.getElementById('imagenAuto').style.display='block';">
+            Agregar imagen del auto
+        </button>
+        <button onclick="document.getElementById('titulo').style.color='black'">
+            Cambiar color del título a verde
+        </button>
+        <button onclick="document.getElementById('precioAuto').innerText='Precio: $85,000 USD';">
+            Mostrar precio del auto
+        </button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Concesionario de Autos</p>
+    </footer>
+</body>
+</html>

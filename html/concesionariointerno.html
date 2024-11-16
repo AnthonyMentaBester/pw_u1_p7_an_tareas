@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario de Autos</title>
+    <link rel="stylesheet" href="/css/cssexterno2.css">
+    <script>
+        function mostrarNombre(idElemento, valor) {
+            document.getElementById(idElemento).innerText = "Modelo: " + valor;
+        }
+
+        function agregarImagen(idElemento, urlImagen) {
+            document.getElementById(idElemento).innerHTML = `<img src="${urlImagen}" alt="Auto" style="width: 100%; max-width: 300px; border-radius: 10px;">`;
+        }
+
+        function cambiarColorTexto(idElemento, color) {
+            document.getElementById(idElemento).style.color = color;
+        }
+
+        function mostrarCosto(idElemento, costo) {
+            document.getElementById(idElemento).innerText = "Costo: $" + costo;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Concesionario de Autos</h1>
+    </header>
+    <section>
+        <h2 id="nombreAuto">Descubre el modelo</h2>
+        <div id="imagenAuto"></div>
+        <p id="costoAuto">Solicita información sobre el precio</p>
+
+        <br>
+        <button onclick="mostrarNombre('nombreAuto', 'BMW M4')">Mostrar Nombre</button>
+        <button onclick="agregarImagen('imagenAuto', 'https://www.bmw.com.ec/content/dam/bmw/marketLATAM/master/LandingPage/bmw-m4-new-01.jpg')">Agregar Imagen</button>
+        <button onclick="cambiarColorTexto('nombreAuto', 'black')">Cambiar Texto</button>
+        <button onclick="mostrarCosto('costoAuto', '84,000')">Mostrar Costo</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Concesionario de Autos</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario de Autos</title>
+    <link rel="stylesheet" href="/css/cssexterno3.css">
+    <script src="/js/concesionarioexterno.js">
+        
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Concesionario de Autos</h1>
+    </header>
+    <section>
+        <h2 id="nombreAuto">Descubre el modelo</h2>
+        <div id="imagenAuto"></div>
+        <p id="costoAuto">Info sobre el precio</p>
+
+        <br>
+        <button onclick="mostrarNombre('nombreAuto', 'BMW M4')">Mostrar Nombre</button>
+        <button onclick="agregarImagen('imagenAuto', 'https://i.pinimg.com/550x/b0/8d/f4/b08df4c9661bafe0c4d2a22c41283ecd.jpg')">Agregar Imagen</button>
+        <button onclick="cambiarColorTexto('nombreAuto', 'black')">Cambiar Texto</button>
+        <button onclick="mostrarCosto('costoAuto', '84,000')">Mostrar Costo</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Concesionario de Autos</p>
+    </footer>
+</body>
+</html>
